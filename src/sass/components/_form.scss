@@ -1,0 +1,296 @@
+
+
+form{
+    h4{
+        color: var(--clr-blue-light);
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+    .chat-container & h4{
+        color: var(--clr-blue-dark) !important;
+
+    }
+    p{
+        line-height: 1 !important;
+    }
+}
+
+.wpcf7-response-output{
+    border: none !important;
+    color: red;
+    margin: 0 !important;
+    padding: 0px !important;
+    margin-top: 1rem !important;
+}
+
+input[type=text], input[type=button], input[type=email], input[type=tel], textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+footer .wpcf7-form, .content .wpcf7-form, .chat-container .wpcf7-form {
+    border-radius: 10px;
+    width: 100%;
+    input:not([type="submit"]), textarea{
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        padding: 1.1rem 0px;
+        padding-bottom: 0.8rem;
+        background-color: transparent;
+        resize: none;
+        border: none;
+        border-bottom: 1px var(--clr-blue-light) solid;
+        max-height: 240px;
+        width: 100%;
+        color: white;
+        outline: none;
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+    }
+    p{
+        margin-bottom: 1rem;
+    }
+    input[type="submit"]{
+        margin-top: 1.5rem;
+    }
+    textarea{
+        max-height: 62px;
+        overflow: hidden;
+    }
+
+    h4{
+        color: var(--clr-blue-light);
+    }
+
+}
+.chat-container .wpcf7-form{
+    input:not([type="submit"]), textarea{
+        color: var(--clr-blue-light);
+
+    }
+}
+
+.content .wpcf7-form{
+    h4{
+        color: var(--clr-blue-light);
+    }
+    label{
+        color: white;
+    }
+    background-color: var(--clr-blue-dark);
+    padding: 2rem;
+    .form-wrapper{
+        &::before{
+            display: none;
+        }
+    }
+}
+
+
+section.contact-form{
+    border-radius: 10px;
+    width: 100%;
+    background-color: #FBFBFB;
+    padding: 4rem 0px;
+    & + .references{
+        margin-top: 0px;
+    }
+    @media only screen and (min-width: 1300px) {
+        padding: 8rem 0px;
+
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        @media only screen and (min-width: 768px) {
+            grid-gap: 3rem;
+            grid-template-columns: 1fr 1fr;
+
+
+        }
+        &>div:first-child {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+            @media only screen and (min-width: 768px) {
+                grid-gap: 2rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+
+
+            }
+            @media only screen and (min-width: 1300px) {
+                grid-gap: 2rem;
+                grid-template-columns: 1fr 1fr;
+
+
+            }
+        }
+        .person{
+            display: grid;
+            grid-template-columns: auto 2fr;
+            grid-gap: 1rem;
+            height: min-content;
+            @media only screen and (min-width: 768px) {
+                grid-gap: 2rem;
+                grid-template-columns: auto 2fr;
+
+
+            }
+        }
+    }
+    h4{
+        color: var(--clr-blue-light);
+
+    }
+    .text{
+        font-weight: 600;
+        color: var(--clr-blue-dark);
+        line-height: 1.5;
+
+    }
+    .person{
+        figure{
+            // width: auto;
+        }
+        img{
+            border-radius: 50%;
+            height: 100px;
+            width: auto;
+            @media only screen and (min-width: 568px) {
+                height: 120px;
+
+            }
+        }
+        h4{
+            white-space: nowrap;
+            margin-bottom: 0.5rem;
+        }
+        p{
+            line-height: 1.5;
+            font-size: 1rem;
+            white-space: nowrap;
+            .role{
+                white-space: normal;
+            }
+        }
+    }
+    input:not([type="submit"]), textarea{
+        font-size: 0.825rem;
+        font-weight: 400;
+        width: 100%;
+        padding: 1.1rem 0px;
+        padding-bottom: 0.8rem;
+        background-color: transparent;
+        resize: none;
+        border: none;
+        border-bottom: 1px var(--clr-blue-dark) solid;
+        max-height: 240px;
+        width: 100%;
+        color: var(--clr-blue-dark);
+        outline: none;
+        &::placeholder{
+            color: var(--clr-blue-dark);
+        }
+
+    }
+    input[type="submit"]{
+        margin-top: 1.5rem;
+        color: var(--clr-blue-dark);
+        // border: none;
+
+
+    }
+    textarea{
+        max-height: 60px;
+        padding-bottom: 0px;
+    }
+}
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wpcf7-form .form-wrapper {
+    position: relative;
+    span{
+        width: 100%;
+    }
+}
+
+.wpcf7-form .form-wrapper + .form-wrapper {
+    margin-top: 1.5rem;
+}
+
+footer{
+    .wpcf7-form .form-wrapper + .form-wrapper {
+        margin-top: 2rem;
+    }
+}
+
+
+.wpcf7-form label {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    font-size: 0.825rem;
+    transform: translateY(-50%);
+    transition: all 0.25s ease-in-out;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.wpcf7-form .form-textarea-wrapper label {
+    top: 45%;
+    transform: none;
+    background-color: inherit;
+
+    footer &{
+        background-color: var(--clr-blue-dark);
+
+    }
+    section.contact-form &{
+        background-color: #FBFBFB;
+    }
+}
+
+.wpcf7-form label.focused {
+    top: -4px;
+    transform: none;
+    color: var(--clr-blue-light);
+}
+
+
+.wpcf7-form .wpcf7-form-control-wrap {
+    position: static;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+    position: absolute;
+    bottom: 80%;
+    font-size: 12px;
+    color: #ff4545;
+    font-weight: 600;
+}
+
+footer{
+
+    .wpcf7-form .wpcf7-not-valid-tip {
+        position: absolute;
+        bottom: 115%;
+    }
+
+}
+
+
+/* OUTPUT MESSAGES CF7
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wpcf7 form .wpcf7-response-output {
+    font-size: 0.825rem;
+    padding: 10px;
+    margin: 0;
+}
+

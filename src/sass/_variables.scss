@@ -1,0 +1,54 @@
+:root {
+
+	--fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+	--fs-700: 2.5rem;
+	--fs-600: 2rem;
+	--fs-500: 1.5rem;
+	--fs-400: 1rem;
+	--fs-300: 0.875rem;
+
+	// --ff-body: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	// --ff-heading: var(--ff-body);
+
+	--lh-body: 1.5;
+	--lh-heading: 1.1;
+
+	--bs-high: 0 2px 16px -2px rgba(0, 0, 0, 0.3); //0 4px 8px -2px rgba(0, 0, 0, 0.16);
+	--bs-medium: 0 0px 16px -2px rgba(0, 0, 0, 0.2); //0 4px 8px -2px rgba(0, 0, 0, 0.16);
+	--bs-low: 0 2px 12px -2px rgba(0, 0, 0, 0.1); //0 4px 8px -2px rgba(0, 0, 0, 0.16);
+
+	--cubic-bezier: cubic-bezier(.75,0,.5,1);
+
+
+	// --clr-blue-light: #2ea0ef;
+	--clr-blue-light: #2098EE;
+	--clr-blue-lighter: #F0F8FF;
+
+    --clr-blue-dark: rgb(20,40,59);
+	--clr-blue-dark-text: #002746;
+
+	--clr-btn-txt: white;
+	--clr-btn-bg: var(--clr-blue-light);
+
+	--clr-primary: #2098EE;
+	--clr-secondary: #002746;
+
+	// --small-phone: 360px;
+	// --large-phone: 576px;
+	// --tablet: 768px;
+	// --large-tablet: 992px;
+	// --laptop: 1200px;
+
+	--app-height: 100%;
+}
+
+@media (min-width: 40em) {
+	:root{
+		--fs-700: 3.25rem;
+		--fs-600: 2.75rem;
+		--fs-500: 1.625rem;
+		--fs-400: 1.125rem;
+		--fs-300: 1rem;
+
+	}
+}

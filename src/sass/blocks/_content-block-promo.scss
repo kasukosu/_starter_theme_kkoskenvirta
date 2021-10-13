@@ -1,0 +1,74 @@
+@import "../variables";
+
+
+
+
+.wp-block-promo {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	box-shadow: var(--box-shadow);
+	border-radius: 10px;
+	background-color: var(--clr-blue-dark);
+	padding: 1.5rem 2rem;
+	width: 100%;
+	a{
+		color: var(--clr-blue-light);
+		&:hover{
+			text-decoration: none;
+		}
+
+	}
+	.extra-title{
+		width: 90%;
+		line-height: 1.5;
+	}
+	@media only screen and (min-width: 992px) {
+		margin-top: 0rem;
+		margin-bottom: 1.5rem;
+	}
+
+	span[class^="more-"] + & {
+		margin-top: 0;
+		color: var(--clr-blue-light);
+
+	}
+
+
+
+	div.article {
+		figure,
+		div {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-columns: 1fr;
+			grid-row-gap: 0.5rem;
+			width: inherit;
+			max-width: inherit;
+			@media screen and (min-width: 768px) {
+				grid-template-columns: 1fr;
+
+			}
+		}
+
+		p.read-more {
+			font-weight: 500;
+
+
+		}
+		h3.title{
+
+			a{
+				font-size: 1.2rem;
+				color: white;
+			}
+		}
+
+
+	}
+}
+
+
+.page-template-palvelut-page .wp-block-promo{
+	margin-bottom: 3rem;
+	max-width: 600px;
+}

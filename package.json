@@ -1,0 +1,40 @@
+{
+  "name": "Betta",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^10.3.7",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "cssnano": "^5.0.8",
+    "cwebp-bin": "^6.1.1",
+    "gifsicle": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^6.2.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "0.0.15",
+    "gulp-order": "^1.2.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-potomo-js": "^1.0.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-webp": "^4.0.1",
+    "merge-stream": "^2.0.0",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "postcss-font-magician": "^3.0.0",
+    "svgo": "^1.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

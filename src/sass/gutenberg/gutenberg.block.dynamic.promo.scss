@@ -1,0 +1,36 @@
+@import "../blocks/content-block-promo";
+@import "../variables";
+
+.wp-block-promo {
+	padding: 32px;
+	color: white;
+	&.align-left {
+		float: none;
+		margin-right: 0;
+		transform: none;
+
+		div.article {
+			margin: 0;
+		}
+	}
+
+	&.align-right {
+		float: none;
+		margin-left: 0;
+		transform: none;
+
+		div.article {
+			margin: 0 0 0 auto;
+		}
+	}
+
+	div.article {
+		div.editor-rich-text {
+			padding: 0 0 16px;
+		}
+
+		p.read-more {
+			white-space: normal;
+		}
+	}
+}
